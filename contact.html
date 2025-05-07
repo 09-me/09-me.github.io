@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Salon THE Royal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Salon THE Royal</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h2 style="text-align:center; margin-top: 2rem;">Contact Us</h2>
+    <p style="text-align:center; margin-bottom: 2rem;">Have any questions? Reach out to us below!</p>
+
+    <form action="submit_form.html" method="POST" class="contact-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required placeholder="Your email" />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Your phone number" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Owners:</strong> Shweta Sahu & Pratham Sahu</p>
+      <p><strong>Phone:</strong> 8318055646, 9651128827</p>
+      <p><strong>Email:</strong> salontheroyaljhs@gmail.com</p>
+      <p><strong>Address:</strong> Near V-Mart & UCO Bank, BKD-Jeevanshah Road, Jhansi</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Salon THE Royal. All rights reserved.</p>
+  </footer>
+</body>
+</html>

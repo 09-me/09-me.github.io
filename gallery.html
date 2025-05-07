@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Salon THE Royal</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8fb;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      background-color: #6a1b9a;
+      padding: 15px 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ffccff;
+    }
+
+   /* Banner / Header */
+    .gallery-header {
+      background: url('images/bridal1.jpg') center/cover no-repeat;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+      background-color: rgba(0,0,0,0.5);
+      background-blend-mode: darken;
+    }
+
+
+    }
+
+    .gallery-header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .gallery-header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    /* Image Grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Back Button */
+    .back-button {
+      display: block;
+      margin: 40px auto 60px;
+      background-color: #6a1b9a;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      width: fit-content;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #4a0072;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="gallery-header">
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="videos/salon-banner.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay-text">
+    <h1>Our Gallery</h1>
+    <p>Snapshots of our studio, styles, and beautiful transformations</p>
+  </div>
+</div>
+
+
+  <!-- Image Grid -->
+<div class="gallery">
+  <a href="images/haircut.jpg" data-lightbox="salon-gallery">
+    <img src="images/haircut.jpg" alt="Haircut">
+  </a>
+  <a href="images/bridal.jpg" data-lightbox="salon-gallery">
+    <img src="images/bridal.jpg" alt="Bridal Makeup">
+  </a>
+  <a href="images/haircolor.jpg" data-lightbox="salon-gallery">
+    <img src="images/haircolor.jpg" alt="Hair Color">
+  </a>
+  <a href="images/facial.jpg" data-lightbox="salon-gallery">
+    <img src="images/facial.jpg" alt="Facials">
+  </a>
+  <a href="images/manicure.jpg" data-lightbox="salon-gallery">
+    <img src="images/manicure.jpg" alt="Manicure">
+  </a>
+  <a href="images/bridal1.jpg" data-lightbox="salon-gallery">
+    <img src="images/bridal1.jpg" alt="Pedicure">
+<a href="images/gallery8.jpg" data-lightbox="salon-gallery">
+  <img src="images/gallery8.jpg" alt="Makeup Finish">
+</a>
+<a href="images/gallery9.jpg" data-lightbox="salon-gallery">
+  <img src="images/gallery9.jpg" alt="Hair Spa">
+</a>
+<a href="images/gallery10.jpg" data-lightbox="salon-gallery">
+  <img src="images/gallery10.jpg" alt="Client Transformation">
+</a>
+<a href="images/gallery11.jpg" data-lightbox="salon-gallery">
+  <img src="images/gallery11.jpg" alt="Client Transformation">
+</a>
+<a href="images/gallery12.jpg" data-lightbox="salon-gallery">
+  <img src="images/gallery12.jpg" alt="Client Transformation">
+</a>
+
+</div>
+
+
+  <!-- Back Button -->
+  <a href="index.html" class="back-button">← Back to Home</a>
+
+</body>
+</html>
